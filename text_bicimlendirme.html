@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        div {
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+
+        p {
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: 2px;
+            /*herfler arasindaki mesafe**/
+            word-spacing: 3px;
+            /*Kelimeler arasindaki mesafe*/
+            line-height: 200%;
+            /*setirler arasindaki mesafe*/
+
+        }
+
+
+        h2 {
+            text-transform: capitalize;
+            /*Her kelimenin ilk herfi boyuyur*/
+            /*lowercase= butun herfler balacalasir*/
+            /*uppercase = butun herfler boyuyur*/
+        }
+
+        span {
+            font-style: italic;
+            /*span icinde yazilmis kelimeni yan yazdiriri*/
+            font-weight: bold;
+            /*qalin yazdiriri*/
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            /*alt cizginin olmamasi ucun*/
+        }
+
+        #bir {
+            text-align: right;
+            /*text saga teref gedir*/
+        }
+
+        #iki {
+            text-align: center;
+            /*merkeze*/
+        }
+
+        #uc {
+            text-align: left;
+            /*sola teref*/
+
+            border: 2px solid blue;
+            padding: 10px;
+
+            column-count: 3;/*yazini sutuna ayirir. 2 yazaraq iki yere bolmek*/
+            -webkit-column-count: 3; /*elave ederek opera, chrome ve safaride rahat calisa bilir*/
+            -moz-column-count: 3; /*elave ederek mozilladada rahat isleye biler*/
+
+            
+            column-rule: 2px solid blue; /*ayrilmis hisseye ayirici xett qoyur*/
+            -webkit-column-rule: 2px solid blue;
+            -moz-column-rule: 2px solid blue;
+
+
+
+        }
+
+        #dord {
+            text-align: justify;/*her iki terefe yaslanir */
+            text-indent: 30px; /*paragraf boslugu ucun. */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Lorem, ipsum dolor.</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Rerum, numquam at.
+            Fugiat animi eveniet deleniti, illo blanditiis
+            modi dignissimos <span> commodi </span> aspernatur voluptatum
+            eum maiores amet enim, earum ipsum inventore
+            sint. In placeat <span> <a class="link" href="#">perferendis </a> </span> sapiente culpa
+            saepe hic aperiam natus enim, vel corporis,
+            minima quo harum odit! Eos ea ipsam mollitia!</p>
+    </div>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+
+    <p id="bir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut minima mollitia quisquam explicabo
+        consequuntur
+        laboriosam, blanditiis vero. Et deserunt nihil voluptatum labore accusamus, libero incidunt vero ullam molestias
+        eligendi, consectetur quos veniam cupiditate consequuntur qui animi mollitia. Quibusdam, ipsa sed, accusamus quo
+        minus deserunt eius earum omnis vitae inventore sequi.</p>
+
+    <br><br>
+    <p id="iki">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt pariatur veniam, numquam magni quae
+        corporis optio
+        eaque dicta rerum impedit? Quia illo tempore nostrum delectus voluptatibus, itaque sint cumque ex ullam
+        inventore neque unde, ea odio ipsam deserunt excepturi! Suscipit minima esse optio quaerat quam tenetur sit
+        numquam illum quia.</p>
+
+    <br><br>
+
+    <p id="uc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum accusantium quae provident,
+        consequatur in
+        atque quasi tenetur, eligendi esse aut error et fugiat eaque ad minus necessitatibus minima saepe eum porro.
+        Laborum libero nobis excepturi, praesentium deserunt possimus odio iusto cum dolores, autem aliquam dicta itaque
+        nihil saepe esse.</p>
+
+    <br><br>
+
+    <p id="dord">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam veniam sit. Quasi possimus
+        neque libero
+        nisi repellendus ad incidunt tempora, obcaecati fugit ipsam illum labore, eaque numquam officiis. Porro
+        obcaecati dolore facere! Maxime, aliquid omnis voluptate dolor nihil dolorum odio at aspernatur ut, perspiciatis
+        nulla deserunt repellat maiores autem.</p>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/*Pseudo Elements*/
+
+p::first-line{
+    font-weight: bold;
+    color: red;
+    word-spacing: 2px; /*kelimeler arasindaki bosluq*/
+    letter-spacing: 2px;/*herfler arasindaki bosluq*/
+}
+
+p::first-letter{
+    font-size: 50px; /*ilk herfi boyuk yazdirir*/
+}
+
+
+/*Pseudo class*/
+
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul li:first-child {
+    background: red;
+}
+
+ul li:last-child{
+    background-color: green;
+}
+
+a:visited{ /*visited-tiklanmis linkin rengini deyismek ucun istifade olunur*/
+    color: rgb(108, 5, 39); 
+}
+
+a:hover{ /*linkin uzerine gelende renginin deyisilmesi*/
+    color: white;
+    background: yellowgreen;
+}
+a{
+    padding: 5px 10px;
+    text-decoration: none;/*aciqlama yeri*/
+    display: block; /*alt alta kecmesi ucun*/
+    width: 100px; /*linkin genisliyi ucun*/
+    margin-bottom: 10px;
+}
+    </style>
+    
+
+</head>
+
+<body>
+    <h2 title="basliq1">Basliq 1</h2>
+    <p title="paraqraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, eius!</p>
+    <h2 title="basliq2">Basliq 2</h2>
+    <p title="paraqraf2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Consequatur odit voluptatibus libero, beatae labore porro incidunt amet
+        omnis optio debitis.</p>
+
+    <a href="http://www.google.com">Link 1</a>
+    <a href="wwww.example.com" target="blank">Link 2</a><br><br><br><br>
+
+    <input type="text" name="Name">
+    <input type="button" value="Button">
+
+
+    <ul>
+        <li>Madde1</li>
+        <li>Madde2</li>
+        <li>Madde3</li>
+        <li>Madde4</li>
+
+    </ul>
+</body>
+
+</html>

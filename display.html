@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+<style>
+
+div{
+    width: 500px;
+    height: 100px;
+    background: aqua;
+    margin: 5px;
+    display: inline-block;/*sadece inline--divleri yan yana yazdirir. Bir seyi unutma display inline istifade ederken width ve height yazdigin hec bir rol oynamir.
+    inline-block yazildiqda ise sehifeni kicildikde alt alta boyutdukde yan yana getirir.*/
+}
+a{
+    display: block; /*linkleri yan yana yox alt alta yazdirir*/
+}
+span{
+    display: block;
+}
+
+#qutu1{
+    display: none; /*yazilanda ise görünmez edirik. cox istifade edilmeyen bir seydi*/
+}
+
+
+</style>
+    
+</head>
+
+<body>
+    <div id="qutu1">Qutu1</div>
+    <div id="qutu2 ">Qutu2</div>
+
+<br><br>
+
+    <a href="">Link1</a>
+    <a href="">Link2</a>
+    <a href="">Link3</a>
+
+<br><br>
+
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sequi?</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sequi?</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sequi?</span>
+
+
+</body>
+
+</html>
